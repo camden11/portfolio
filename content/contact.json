@@ -1,0 +1,22 @@
+{
+  "contactHeader": "Contact Me",
+  "contactLinks": [
+    {
+      "title": "Email",
+      "url": "camdenphalen@gmail.com"
+    },
+    {
+      "title": "Github",
+      "url": "https://github.com/camden11"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/camdenphalen/"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/camdenphalen/"
+    }
+  ],
+  "resumeHeader": "View My Resume"
+}
