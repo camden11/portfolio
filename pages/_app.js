@@ -1,12 +1,17 @@
+import { ColorControl, Nav } from "components";
+import { TextColor } from "state";
 import "styles/globals.css";
-import { Nav } from "components";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="container">
-      <Nav />
-      <Component {...pageProps} />
-    </div>
+    <TextColor.Provider>
+      <div className="container">
+        <ColorControl>
+          <Nav />
+          <Component {...pageProps} />
+        </ColorControl>
+      </div>
+    </TextColor.Provider>
   );
 }
 
