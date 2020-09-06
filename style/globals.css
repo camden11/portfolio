@@ -115,5 +115,5 @@ a.unstyled {
 
 /* Icons */
 svg {
-  transition: fill 0.3s;
+  transition: inherit;
 }

@@ -2,6 +2,6 @@
   flex-shrink: 0;
   height: 100px;
   padding: 5px;
-  transition: background-color 0.3s;
+  transition: inherit;
   width: 100px;
 }
