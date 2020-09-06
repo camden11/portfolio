@@ -6,8 +6,8 @@ const Contact = ({ content }) => {
       <div className="column-6">
         <h3>{content.contactHeader}</h3>
         <ul>
-          {content.contactLinks.map(({ title, url }) => (
-            <li>
+          {content.contactLinks.map(({ title, url }, index) => (
+            <li key={index}>
               <a href={url} target="_blank">
                 {title}
               </a>

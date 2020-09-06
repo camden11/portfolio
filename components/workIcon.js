@@ -4,14 +4,14 @@ import { TextColor } from "state";
 import styles from "style/workIcon.module.css";
 import { SVG } from "components";
 
-const WorkIcon = ({ workId }) => {
+const WorkIcon = ({ workId, backgroundColor, iconColor }) => {
   const textColor = TextColor.useContainer();
   return (
     <div
       className={styles.icon}
-      style={{ backgroundColor: textColor.getColor() }}
+      style={{ backgroundColor: backgroundColor || textColor }}
     >
-      <SVG workId={workId} />
+      <SVG workId={workId} color={iconColor} />
     </div>
   );
 };

@@ -3,10 +3,11 @@ import React from "react";
 import { BackgroundColor } from "state";
 import SVGS from "svgs";
 
-const SVG = ({ workId }) => {
+const SVG = ({ workId, color }) => {
   const SVGComponent = SVGS[workId];
   const backgroundColor = BackgroundColor.useContainer();
-  return <SVGComponent fill={backgroundColor.getColor()} />;
+  const fill = color || backgroundColor.getColor();
+  return <SVGComponent fill={fill} />;
 };
 
 export default SVG;

@@ -4,7 +4,7 @@ const WorkItemList = ({ work }) => {
   return (
     <div className="grid">
       {work.map((item) => (
-        <div className="column-6">
+        <div className="column-6" key={item.id}>
           <WorkItem item={item} />
         </div>
       ))}

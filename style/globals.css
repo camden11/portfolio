@@ -23,6 +23,7 @@ h1 {
   font-family: abril-display, serif;
   font-size: 36px;
   font-weight: 600;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -40,6 +41,7 @@ h3 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 50px;
+  margin-top: 100px;
   padding-top: 16px;
   text-transform: uppercase;
   width: 300px;
@@ -70,6 +72,11 @@ a {
   text-transform: uppercase;
 }
 
+a.unstyled {
+  text-transform: none;
+  text-decoration: none;
+}
+
 .align-right {
   text-align: right;
 }
@@ -92,6 +99,21 @@ a {
   grid-column: span 6;
 }
 
+@media (max-width: 768px) {
+  .grid {
+    column-gap: 0;
+  }
+
+  .column-6 {
+    grid-column: span 12;
+  }
+}
+
 .headline-section {
-  margin-bottom: 120px;
+  margin-bottom: 40px;
+}
+
+/* Icons */
+svg {
+  transition: fill 0.3s;
 }
