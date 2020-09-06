@@ -1,7 +1,15 @@
 import React from "react";
 import { WorkItem } from "components";
 const WorkItemList = ({ work }) => {
-  return work.map((item) => <WorkItem item={item} />);
+  return (
+    <div className="grid">
+      {work.map((item) => (
+        <div className="column-6">
+          <WorkItem item={item} />
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default WorkItemList;

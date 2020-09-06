@@ -1,0 +1,8 @@
+.workItem {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.workItemInfo {
+  padding-left: 16px;
+}

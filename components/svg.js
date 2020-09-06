@@ -1,7 +1,12 @@
 import React from "react";
 
-const SVG = ({ src }) => {
-  return <img src={`/svgs/${src}`} style={{ fill: "#123456" }} />;
+import { BackgroundColor } from "state";
+import SVGS from "svgs";
+
+const SVG = ({ workId }) => {
+  const SVGComponent = SVGS[workId];
+  const backgroundColor = BackgroundColor.useContainer();
+  return <SVGComponent fill={backgroundColor.getColor()} />;
 };
 
 export default SVG;

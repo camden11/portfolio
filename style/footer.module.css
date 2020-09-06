@@ -1,0 +1,12 @@
+.footer {
+  border-top: 2px solid;
+  margin-top: 120px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.footerText {
+  font-family: acumin-pro;
+  font-size: 14px;
+  text-transform: uppercase;
+}

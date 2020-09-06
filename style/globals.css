@@ -8,6 +8,13 @@ body {
 
 * {
   box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
 }
 
 /* Text */
@@ -27,11 +34,12 @@ h2 {
 }
 
 h3 {
-  border-top: 2px solid #000;
+  border-top: 2px solid;
   color: inherit;
   font-family: acumin-pro, sans-serif;
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 50px;
   padding-top: 16px;
   text-transform: uppercase;
   width: 300px;
@@ -42,6 +50,7 @@ h4 {
   font-family: acumin-pro, sans-serif;
   font-size: 18px;
   font-weight: 400;
+  text-decoration: underline;
   text-transform: uppercase;
 }
 
@@ -76,8 +85,13 @@ a {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  column-gap: 30px;
 }
 
 .column-6 {
   grid-column: span 6;
+}
+
+.headline-section {
+  margin-bottom: 120px;
 }

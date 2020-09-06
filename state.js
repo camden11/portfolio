@@ -9,7 +9,7 @@ const useTextColor = (initialState = { r: 0, g: 0, b: 0 }) => {
 
 export const TextColor = createContainer(useTextColor);
 
-const useBackgroundColor = (initialState = { r: 0, g: 0, b: 0 }) => {
+const useBackgroundColor = (initialState = { r: 255, g: 255, b: 255 }) => {
   const [color, setColor] = useState(initialState);
   const getColor = () => `rgb(${color.r}, ${color.g}, ${color.b})`;
   return { getColor, setColor };
