@@ -1,9 +1,9 @@
-import Link from "next/link";
 import React, { useState } from "react";
 
 import { BackgroundColor, TextColor } from "state";
-import { NavMenu, PageTitle } from "components";
+import { NavMenu, NavTitleLink } from "components";
 import styles from "style/nav.module.css";
+import { useTyper } from "hooks";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -11,15 +11,22 @@ const Nav = () => {
   const backgroundColor = BackgroundColor.useContainer();
   const textColor = TextColor.useContainer();
 
+  const titleSectionNames = useTyper();
+
   return (
     <div className={styles.nav}>
       <div className={styles.navBar}>
         <div className={styles.navTextContainer}>
-          <Link href="/">
-            <a className="unstyled">
-              <PageTitle />
-            </a>
-          </Link>
+          <h2>
+            {titleSectionNames.map((_, index) => (
+              <span key={index}>
+                <NavTitleLink
+                  currentSectionNames={titleSectionNames.slice(0, index + 1)}
+                />
+                {index !== titleSectionNames.length - 1 && " / "}
+              </span>
+            ))}
+          </h2>
         </div>
         <button
           className={styles.navButton}

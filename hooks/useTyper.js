@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import { last, equals } from "util/array";
 import { PageTitle as TitleTarget } from "state";
-import styles from "style/pageTitle.module.css";
 
 const TYPE_INTERVAL = 50;
 
-const PageTitle = () => {
+const useTyper = () => {
   const [current, setCurrent] = useState([""]);
   const [intervalRef, setIntervalRef] = useState(null);
 
@@ -69,10 +68,13 @@ const PageTitle = () => {
     }
   };
 
-  useEffect(typeOnInterval, [last(target)]);
+  useEffect(() => {
+    setIsDone(false);
+    typeOnInterval();
+  }, [last(target)]);
   useEffect(typeOnInterval, [current]);
 
-  return <h2 className={styles.navText}>{current.join(" / ")}</h2>;
+  return current;
 };
 
-export default PageTitle;
+export default useTyper;

@@ -75,6 +75,10 @@ a {
 a.unstyled {
   text-transform: none;
   text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
 }
 
 .align-right {
