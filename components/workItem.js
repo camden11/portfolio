@@ -33,10 +33,10 @@ const WorkItem = ({ item }) => {
 
   const iconBackgroundColor = hover
     ? item.backgroundColorHover || item.backgroundColor
-    : textColor.getColor();
+    : textColor.color;
   const iconColor = hover
     ? item.textColorHover || item.textColor
-    : backgroundColor.getColor();
+    : backgroundColor.color;
 
   const transitionStyle = transition
     ? `background-color 0.${TRANSITION_TIME}s, fill 0.${TRANSITION_TIME}s`

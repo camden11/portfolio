@@ -1,7 +1,8 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 import { BackgroundColor, TextColor } from "state";
-import { Slider } from "components";
+import { NavMenu, PageTitle } from "components";
 import styles from "style/nav.module.css";
 
 const Nav = () => {
@@ -13,37 +14,25 @@ const Nav = () => {
   return (
     <div className={styles.nav}>
       <div className={styles.navBar}>
-        <h2 className={styles.navText}>Camden Phalen</h2>
+        <div className={styles.navTextContainer}>
+          <Link href="/">
+            <a className="unstyled">
+              <PageTitle />
+            </a>
+          </Link>
+        </div>
         <button
           className={styles.navButton}
           style={{
-            color: backgroundColor.getColor(),
-            backgroundColor: textColor.getColor(),
+            color: backgroundColor.color,
+            backgroundColor: textColor.color,
           }}
           onClick={() => setOpen(!open)}
         >
           +
         </button>
       </div>
-      <div
-        className={styles.navMenu}
-        style={{
-          maxHeight: open ? 200 : 0,
-          borderBottom: open ? "2px solid" : "none",
-        }}
-      >
-        Menu here
-        <Slider
-          onChange={(value) =>
-            textColor.setColor({ r: value, g: value, b: value })
-          }
-        />
-        <Slider
-          onChange={(value) =>
-            backgroundColor.setColor({ r: value, g: value, b: value })
-          }
-        />
-      </div>
+      <NavMenu open={open} />
     </div>
   );
 };

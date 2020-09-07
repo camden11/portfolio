@@ -1,0 +1,32 @@
+import React from "react";
+import Link from "next/link";
+
+import { getFile, getFiles } from "util/fs";
+import { usePageTitle } from "hooks";
+
+const WorkItemPage = ({ content }) => {
+  usePageTitle(["Camden Phalen", "Work", content.name]);
+  return (
+    <div>
+      <div className="headline-section">
+        <h1>{content.headline}</h1>
+        <Link href="/work/alignable">
+          <a>please</a>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export const getStaticProps = async ({ params: { id } }) => {
+  const content = await getFile(`/work/${id}`);
+  return { props: { content } };
+};
+
+export const getStaticPaths = async () => {
+  const allWork = await getFiles("work");
+  const paths = allWork.map((workItem) => ({ params: { id: workItem.id } }));
+  return { paths, fallback: false };
+};
+
+export default WorkItemPage;
