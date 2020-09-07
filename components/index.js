@@ -7,6 +7,7 @@ export { default as NavMenu } from "./navMenu";
 export { default as NavTitleLink } from "./navTitleLink";
 export { default as Slider } from "./slider";
 export { default as SVG } from "./svg";
+export { default as TransitionWrapper } from "./transitionWrapper";
 export { default as WorkIcon } from "./workIcon";
 export { default as WorkItem } from "./workItem";
 export { default as WorkItemList } from "./workItemList";

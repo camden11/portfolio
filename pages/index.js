@@ -1,16 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useEffect } from "react";
 
 import { Contact, WorkItemList } from "components";
 import { getFile, getFiles } from "util/fs";
 import styles from "style/Home.module.css";
-import { usePageTitle } from "hooks";
-
-const PAGE_TITLE = ["Camden Phalen"];
 
 const HomePage = ({ content, contact, work }) => {
-  usePageTitle(PAGE_TITLE);
   return (
     <div>
       <div className="headline-section">

@@ -1,4 +1,6 @@
-import { ColorControl, Footer, Nav } from "components";
+import React from "react";
+
+import { ColorControl, Footer, Nav, TransitionWrapper } from "components";
 import StateProvider from "state";
 import "style/globals.css";
 
@@ -8,8 +10,10 @@ function MyApp({ Component, pageProps }) {
       <div className="container">
         <ColorControl>
           <Nav />
-          <Component {...pageProps} />
-          <Footer />
+          <TransitionWrapper>
+            <Component {...pageProps} />
+            <Footer />
+          </TransitionWrapper>
         </ColorControl>
       </div>
     </StateProvider>

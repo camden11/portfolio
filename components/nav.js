@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { BackgroundColor, TextColor } from "state";
 import { NavMenu, NavTitleLink } from "components";
 import styles from "style/nav.module.css";
-import { useTyper } from "hooks";
+import { useTyper, usePageTitle } from "hooks";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -11,6 +11,7 @@ const Nav = () => {
   const backgroundColor = BackgroundColor.useContainer();
   const textColor = TextColor.useContainer();
 
+  usePageTitle();
   const titleSectionNames = useTyper();
 
   return (

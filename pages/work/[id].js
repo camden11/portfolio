@@ -2,10 +2,8 @@ import React from "react";
 import Link from "next/link";
 
 import { getFile, getFiles } from "util/fs";
-import { usePageTitle } from "hooks";
 
 const WorkItemPage = ({ content }) => {
-  usePageTitle(["Camden Phalen", "Work", content.name]);
   return (
     <div>
       <div className="headline-section">

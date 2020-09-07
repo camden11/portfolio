@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 import { PageTitle } from "state";
-import { formatLink } from "util/link";
+import { formatPath } from "util/path";
 import { last } from "util/array";
 
 const NavTitleLink = ({ currentSectionNames }) => {
@@ -22,7 +22,7 @@ const NavTitleLink = ({ currentSectionNames }) => {
   } else {
     const formattedSections = currentSectionNames
       .slice(1)
-      .map((_, i) => formatLink(targetSectionNames[i + 1]))
+      .map((_, i) => formatPath(targetSectionNames[i + 1]))
       .join("/");
     href = `/${formattedSections}`;
   }
