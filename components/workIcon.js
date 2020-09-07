@@ -1,8 +1,7 @@
 import React from "react";
-
+import { SVG } from "components";
 import { TextColor } from "state";
 import styles from "style/workIcon.module.css";
-import { SVG } from "components";
 
 const WorkIcon = ({ workId, backgroundColor, iconColor }) => {
   const textColor = TextColor.useContainer();

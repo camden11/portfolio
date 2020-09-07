@@ -1,10 +1,19 @@
-import React from "react";
+import { BackgroundColor, TextColor } from "state";
 
-import { TextColor } from "state";
+import React from "react";
+import styles from "style/colorControl.module.css";
 
 const ColorControl = ({ children }) => {
   const textColor = TextColor.useContainer();
-  return <div style={{ color: textColor.color }}>{children}</div>;
+  const backgroundColor = BackgroundColor.useContainer();
+  return (
+    <div
+      className={styles.colorControl}
+      style={{ color: textColor.color, backgroundColor: backgroundColor.color }}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default ColorControl;

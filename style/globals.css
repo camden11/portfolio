@@ -2,8 +2,13 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+#__next {
+  min-height: 100vh;
 }
 
 * {
@@ -91,6 +96,10 @@ a.unstyled {
   padding-top: 20px;
   width: 90%;
   max-width: 1100px;
+}
+
+.main-content-wrapper {
+  min-height: calc(100vh - 270px);
 }
 
 .grid {

@@ -1,9 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
+import { useColor } from "hooks";
 import { getFile, getFiles } from "util/fs";
 
 const WorkItemPage = ({ content }) => {
+  useColor(content.textColor, content.backgroundColor, [content.id]);
+
   return (
     <div>
       <div className="headline-section">

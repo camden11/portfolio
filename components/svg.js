@@ -1,6 +1,5 @@
-import React from "react";
-
 import { BackgroundColor } from "state";
+import React from "react";
 import SVGS from "svgs";
 
 const SVG = ({ workId, color }) => {

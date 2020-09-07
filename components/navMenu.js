@@ -1,6 +1,6 @@
-import React from "react";
-
 import { BackgroundColor, TextColor } from "state";
+
+import React from "react";
 import { Slider } from "components";
 import styles from "style/navMenu.module.css";
 

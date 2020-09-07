@@ -7,15 +7,17 @@ import "style/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <StateProvider>
-      <div className="container">
-        <ColorControl>
+      <ColorControl>
+        <div className="container">
           <Nav />
           <TransitionWrapper>
-            <Component {...pageProps} />
+            <div className="main-content-wrapper">
+              <Component {...pageProps} />
+            </div>
             <Footer />
           </TransitionWrapper>
-        </ColorControl>
-      </div>
+        </div>
+      </ColorControl>
     </StateProvider>
   );
 }

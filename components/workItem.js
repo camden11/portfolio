@@ -1,9 +1,10 @@
-import Link from "next/link";
+import { BackgroundColor, TextColor } from "state";
 import React, { useState } from "react";
 
+import Link from "next/link";
 import { WorkIcon } from "components";
+import { formatColor } from "util/color";
 import styles from "style/workItem.module.css";
-import { TextColor, BackgroundColor } from "state";
 
 const TRANSITION_TIME = 300;
 
@@ -32,10 +33,10 @@ const WorkItem = ({ item }) => {
   const backgroundColor = BackgroundColor.useContainer();
 
   const iconBackgroundColor = hover
-    ? item.backgroundColorHover || item.backgroundColor
+    ? formatColor(item.backgroundColorHover || item.backgroundColor)
     : textColor.color;
   const iconColor = hover
-    ? item.textColorHover || item.textColor
+    ? formatColor(item.textColorHover || item.textColor)
     : backgroundColor.color;
 
   const transitionStyle = transition

@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { equals, last } from "util/array";
+import { useEffect, useState } from "react";
 
-import { last, equals } from "util/array";
 import { PageTitle as TitleTarget } from "state";
 
 const TYPE_INTERVAL = 50;

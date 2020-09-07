@@ -1,11 +1,15 @@
-import Head from "next/head";
-import Link from "next/link";
-
 import { Contact, WorkItemList } from "components";
 import { getFile, getFiles } from "util/fs";
+
+import Link from "next/link";
 import styles from "style/Home.module.css";
+import { useColor } from "hooks";
+
+const TEXT_COLOR = { r: 0, g: 0, b: 0 };
+const BACKGROUND_COLOR = { r: 255, g: 255, b: 255 };
 
 const HomePage = ({ content, contact, work }) => {
+  useColor(TEXT_COLOR, BACKGROUND_COLOR);
   return (
     <div>
       <div className="headline-section">

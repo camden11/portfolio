@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 import { PageTitle } from "state";
 import { getTitleFromPath } from "util/path";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 const usePageTitle = () => {
   const router = useRouter();

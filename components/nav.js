@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-
 import { BackgroundColor, TextColor } from "state";
 import { NavMenu, NavTitleLink } from "components";
+import React, { useState } from "react";
+import { usePageTitle, useTyper } from "hooks";
+
 import styles from "style/nav.module.css";
-import { useTyper, usePageTitle } from "hooks";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
