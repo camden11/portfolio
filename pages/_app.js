@@ -1,8 +1,9 @@
-import React from "react";
+import "style/globals.css";
 
 import { ColorControl, Footer, Nav, TransitionWrapper } from "components";
+
+import React from "react";
 import StateProvider from "state";
-import "style/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (

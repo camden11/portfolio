@@ -40,7 +40,9 @@ const WorkItem = ({ item }) => {
     : backgroundColor.color;
 
   const transitionStyle = transition
-    ? `background-color 0.${TRANSITION_TIME}s, fill 0.${TRANSITION_TIME}s`
+    ? `background-color ${TRANSITION_TIME / 1000}s, fill ${
+        TRANSITION_TIME / 1000
+      }s`
     : "none";
   return (
     <Link href={`/work/${item.id}`}>

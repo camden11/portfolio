@@ -4,6 +4,7 @@ export { default as Contact } from "./contact";
 export { default as Footer } from "./footer";
 export { default as Nav } from "./nav";
 export { default as NavMenu } from "./navMenu";
+export { default as NavMenuSection } from "./navMenuSection";
 export { default as NavTitleLink } from "./navTitleLink";
 export { default as Slider } from "./slider";
 export { default as SVG } from "./svg";

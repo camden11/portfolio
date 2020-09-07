@@ -1,27 +1,34 @@
-import React from "react";
-import Link from "next/link";
-
-import { useColor } from "hooks";
 import { getFile, getFiles } from "util/fs";
 
-const WorkItemPage = ({ content }) => {
+import Link from "next/link";
+import React from "react";
+import styles from "style/workPage.module.css";
+import { useColor } from "hooks";
+
+const WorkItemPage = ({ content, pageContent }) => {
   useColor(content.textColor, content.backgroundColor, [content.id]);
 
   return (
     <div>
       <div className="headline-section">
         <h1>{content.headline}</h1>
-        <Link href="/work/alignable">
-          <a>please</a>
-        </Link>
+      </div>
+      <div className="grid">
+        <div className={styles.contentSection}>
+          <h3>{pageContent.contentHeader}</h3>
+          {content.paragraphs.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
 export const getStaticProps = async ({ params: { id } }) => {
+  const pageContent = await getFile(`/work`);
   const content = await getFile(`/work/${id}`);
-  return { props: { content } };
+  return { props: { content, pageContent } };
 };
 
 export const getStaticPaths = async () => {

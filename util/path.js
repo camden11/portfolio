@@ -5,9 +5,13 @@ export const getTitleFromPath = (path, id = "") => {
   if (path === "/") {
     return [ROOT_PATH];
   }
+  const formattedId = id.replace("-", " ");
   const formatted = path
     .slice(1)
     .split("/")
-    .map((pathSection) => pathSection.replace("-", " ").replace("[id]", id));
+    .map((pathSection) =>
+      pathSection.replace("-", " ").replace("[id]", formattedId)
+    );
+  console.log(path, formatted);
   return [ROOT_PATH, ...formatted];
 };
