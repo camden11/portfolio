@@ -14,7 +14,7 @@ const WorkItemPage = ({ content, pageContent }) => {
         <h1>{content.headline}</h1>
       </div>
       <div className="grid">
-        <div className={styles.contentSection}>
+        <div className="column-7">
           <h3>{pageContent.contentHeader}</h3>
           {content.paragraphs.map((paragraph) => (
             <p>{paragraph}</p>

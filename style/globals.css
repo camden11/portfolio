@@ -125,8 +125,16 @@ a.unstyled {
   column-gap: 30px;
 }
 
+.column-5 {
+  grid-column: span 5;
+}
+
 .column-6 {
   grid-column: span 6;
+}
+
+.column-7 {
+  grid-column: span 7;
 }
 
 @media (max-width: 768px) {
@@ -134,7 +142,15 @@ a.unstyled {
     column-gap: 0;
   }
 
+  .column-5 {
+    grid-column: span 12;
+  }
+
   .column-6 {
+    grid-column: span 12;
+  }
+
+  .column-7 {
     grid-column: span 12;
   }
 }
