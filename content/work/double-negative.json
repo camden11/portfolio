@@ -2,9 +2,9 @@
   "name": "Double Negative",
   "priority": 4,
   "backgroundColor": {
-    "r": 0,
-    "g": 0,
-    "b": 0
+    "r": 15,
+    "g": 15,
+    "b": 15
   },
   "backgroundColorHover": {
     "r": 255,

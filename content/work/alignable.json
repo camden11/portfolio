@@ -1,8 +1,16 @@
 {
   "name": "Alignable",
   "priority": 7,
-  "backgroundColor": "",
-  "textColor": "",
+  "backgroundColor": {
+    "r": 95,
+    "g": 74,
+    "b": 139
+  },
+  "textColor": {
+    "r": 93,
+    "g": 217,
+    "b": 198
+  },
   "id": "alignable",
   "headline": "Quadio is a company run by the wealthy family of Jack Welch. Led by Suzy, one of the most batshit people alive. I can’t believe I worked there.",
   "paragraphs": [

@@ -1,8 +1,16 @@
 {
   "name": "Brain Arts",
   "priority": 6,
-  "backgroundColor": "",
-  "textColor": "",
+  "backgroundColor": {
+    "r": 0,
+    "g": 163,
+    "b": 137
+  },
+  "textColor": {
+    "r": 255,
+    "g": 211,
+    "b": 224
+  },
   "id": "brain-arts",
   "headline": "Quadio is a company run by the wealthy family of Jack Welch. Led by Suzy, one of the most batshit people alive. I can’t believe I worked there.",
   "paragraphs": [

@@ -24,7 +24,7 @@ const HomePage = ({ content, contact, work }) => {
         <h3>{content.workHeader}</h3>
         <WorkItemList work={work} />
         <div className="align-right">
-          <Link href="/about">
+          <Link href="/work">
             <a>{content.workMoreButton}</a>
           </Link>
         </div>

@@ -1,8 +1,16 @@
 {
   "name": "Mass Hike",
   "priority": 5,
-  "backgroundColor": "",
-  "textColor": "",
+  "backgroundColor": {
+    "r": 224,
+    "g": 99,
+    "b": 58
+  },
+  "textColor": {
+    "r": 248,
+    "g": 248,
+    "b": 248
+  },
   "id": "mass-hike",
   "headline": "Quadio is a company run by the wealthy family of Jack Welch. Led by Suzy, one of the most batshit people alive. I can’t believe I worked there.",
   "paragraphs": [
