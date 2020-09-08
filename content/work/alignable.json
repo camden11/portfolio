@@ -29,5 +29,10 @@
       "url": "https://www.quadio.com/"
     }
   ],
-  "images": ["url", "url", "url"]
+  "images": [
+    "/img/work/quadio/home.jpg",
+    "/img/work/quadio/profile.jpg",
+    "/img/work/quadio/playlist.jpg",
+    "/img/work/quadio/notifications.jpg"
+  ]
 }

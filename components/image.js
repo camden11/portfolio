@@ -1,20 +1,11 @@
-import { BackgroundColor, TextColor } from "state";
-
 import React from "react";
+import { classNames } from "util/style";
 import styles from "style/image.module.css";
 
-const Image = ({ src }) => {
-  const { formattedColor: textColor } = TextColor.useContainer();
-  // const { formattedColor: backgroundColor } = BackgroundColor.useContainer();
-  // if (
-  //   textColor === "rgb(0, 0, 0)" &&
-  //   backgroundColor === "rgb(255, 255, 255)"
-  // ) {
-  //   return <img src={src} className={styles.imageUnfiltered} />;
-  // }
+const Image = ({ src, alt }) => {
   return (
-    <div style={{ backgroundColor: textColor }} className={styles.filter}>
-      <img src={src} className={styles.image} />
+    <div className={classNames(["filter", "with-color"])}>
+      <img src={src} alt={alt} className={styles.image} />
     </div>
   );
 };

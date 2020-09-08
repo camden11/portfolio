@@ -24,7 +24,7 @@ const AboutPage = ({ content, contact }) => {
           ))}
         </div>
         <div className={classNames(["column-5", styles.imageColumn])}>
-          <Image src={content.image} />
+          <Image src={content.image} alt={content.imageAlt} />
         </div>
       </div>
       <Contact content={contact} />

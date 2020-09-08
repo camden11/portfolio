@@ -1,7 +1,7 @@
+import { Gallery, WorkIcon } from "components";
 import { getFile, getFiles } from "util/fs";
 
 import React from "react";
-import { WorkIcon } from "components";
 import { classNames } from "util/style";
 import styles from "style/workPage.module.css";
 import { useColor } from "hooks";
@@ -61,6 +61,7 @@ const WorkItemPage = ({ content, pageContent }) => {
       {hasImages && (
         <div>
           <h3>{pageContent.imagesHeader}</h3>
+          <Gallery images={content.images} />
         </div>
       )}
     </div>

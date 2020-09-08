@@ -1,7 +1,13 @@
-.image {
+.thumbnailFilter {
+  height: 100%;
+}
+
+.thumbnail {
+  background-size: cover;
   filter: grayscale(100%) contrast(10%);
-  opacity: 0.6;
+  height: 100%;
   margin-bottom: -4px;
+  opacity: 0.6;
   -webkit-filter: grayscale(100%) contrast(120%);
   width: 100%;
 }

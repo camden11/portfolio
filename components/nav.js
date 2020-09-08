@@ -1,16 +1,13 @@
-import { BackgroundColor, PageTitle, TextColor } from "state";
 import { NavMenu, NavTitleLink } from "components";
 import React, { useEffect, useState } from "react";
 import { usePageTitle, useTyper } from "hooks";
 
+import { PageTitle } from "state";
 import { classNames } from "util/style";
 import styles from "style/nav.module.css";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
-
-  const backgroundColor = BackgroundColor.useContainer();
-  const textColor = TextColor.useContainer();
   const { isDone } = PageTitle.useContainer();
 
   usePageTitle();
@@ -38,11 +35,7 @@ const Nav = () => {
           </h2>
         </div>
         <button
-          className={styles.navButton}
-          style={{
-            color: backgroundColor.formattedColor,
-            backgroundColor: textColor.formattedColor,
-          }}
+          className={classNames([styles.navButton, "with-color"])}
           onClick={() => setOpen(!open)}
         >
           <div
