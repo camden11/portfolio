@@ -1,8 +1,9 @@
-import { BackgroundColor, TextColor } from "state";
+import { BackgroundColor, PageTitle, TextColor } from "state";
 import { NavMenu, NavTitleLink } from "components";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { usePageTitle, useTyper } from "hooks";
 
+import { classNames } from "util/style";
 import styles from "style/nav.module.css";
 
 const Nav = () => {
@@ -10,9 +11,16 @@ const Nav = () => {
 
   const backgroundColor = BackgroundColor.useContainer();
   const textColor = TextColor.useContainer();
+  const { isDone } = PageTitle.useContainer();
 
   usePageTitle();
   const titleSectionNames = useTyper();
+
+  useEffect(() => {
+    if (!isDone) {
+      setOpen(false);
+    }
+  }, [isDone]);
 
   return (
     <div className={styles.nav}>
@@ -32,12 +40,19 @@ const Nav = () => {
         <button
           className={styles.navButton}
           style={{
-            color: backgroundColor.color,
-            backgroundColor: textColor.color,
+            color: backgroundColor.formattedColor,
+            backgroundColor: textColor.formattedColor,
           }}
           onClick={() => setOpen(!open)}
         >
-          +
+          <div
+            className={classNames([
+              styles.navButtonIcon,
+              open ? styles.navButtonIconOpen : styles.navButtonIconClosed,
+            ])}
+          >
+            +
+          </div>
         </button>
       </div>
       <NavMenu open={open} />

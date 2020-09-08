@@ -26,8 +26,8 @@ const ColorControl = ({ children }) => {
     <div
       className={styles.colorControl}
       style={{
-        color: textColor.color,
-        backgroundColor: backgroundColor.color,
+        color: textColor.formattedColor,
+        backgroundColor: backgroundColor.formattedColor,
         transition: transition
           ? `background-color ${TRANSITION_TIME / 1000}s, color ${
               TRANSITION_TIME / 1000

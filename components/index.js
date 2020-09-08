@@ -1,12 +1,12 @@
 export { default as Background } from "./background";
 export { default as ColorControl } from "./colorControl";
+export { default as ColorSlider } from "./colorSlider";
 export { default as Contact } from "./contact";
 export { default as Footer } from "./footer";
 export { default as Nav } from "./nav";
 export { default as NavMenu } from "./navMenu";
 export { default as NavMenuSection } from "./navMenuSection";
 export { default as NavTitleLink } from "./navTitleLink";
-export { default as Slider } from "./slider";
 export { default as SVG } from "./svg";
 export { default as TransitionWrapper } from "./transitionWrapper";
 export { default as WorkIcon } from "./workIcon";

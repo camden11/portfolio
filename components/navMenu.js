@@ -1,5 +1,5 @@
 import { BackgroundColor, TextColor } from "state";
-import { NavMenuSection, Slider } from "components";
+import { ColorSlider, NavMenuSection } from "components";
 
 import React from "react";
 import { classNames } from "util/style";
@@ -26,17 +26,9 @@ const NavMenu = ({ open }) => {
       <div className={classNames([styles.column, styles.colorColumn])}>
         <h3 className="unstyled">{content.colorsHeader}</h3>
         <h4 className="unstyled">{content.textColor}</h4>
-        <Slider
-          onChange={(value) =>
-            textColor.setColor({ r: value, g: value, b: value })
-          }
-        />
+        <ColorSlider stateContainer={textColor} />
         <h4 className="unstyled">{content.backgroundColor}</h4>
-        <Slider
-          onChange={(value) =>
-            backgroundColor.setColor({ r: value, g: value, b: value })
-          }
-        />
+        <ColorSlider stateContainer={backgroundColor} />
       </div>
     </div>
   );

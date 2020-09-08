@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import { createContainer } from "unstated-next";
 
+import { createContainer } from "unstated-next";
 import { formatColor } from "util/color";
 
 const useTextColor = (initialState = { r: 0, g: 0, b: 0 }) => {
   const [color, setColor] = useState(initialState);
-  return { color: formatColor(color), setColor };
+  return { color, formattedColor: formatColor(color), setColor };
 };
 
 export const TextColor = createContainer(useTextColor);
 
 const useBackgroundColor = (initialState = { r: 255, g: 255, b: 255 }) => {
   const [color, setColor] = useState(initialState);
-  return { color: formatColor(color), setColor };
+  return { color, formattedColor: formatColor(color), setColor };
 };
 
 export const BackgroundColor = createContainer(useBackgroundColor);

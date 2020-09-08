@@ -34,10 +34,10 @@ const WorkItem = ({ item }) => {
 
   const iconBackgroundColor = hover
     ? formatColor(item.backgroundColorHover || item.backgroundColor)
-    : textColor.color;
+    : textColor.formattedColor;
   const iconColor = hover
     ? formatColor(item.textColorHover || item.textColor)
-    : backgroundColor.color;
+    : backgroundColor.formattedColor;
 
   const transitionStyle = transition
     ? `background-color ${TRANSITION_TIME / 1000}s, fill ${

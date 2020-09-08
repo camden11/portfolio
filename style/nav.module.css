@@ -23,6 +23,18 @@
   width: 40px;
 }
 
+.navButtonIcon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navButtonIconClosed {
+  transform: none;
+}
+
+.navButtonIconOpen {
+  transform: rotate(-45deg);
+}
+
 .navButton:focus {
   outline: none;
 }
