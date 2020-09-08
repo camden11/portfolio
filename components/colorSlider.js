@@ -1,7 +1,6 @@
+import { BackgroundColor, TextColor } from "state";
 import React, { useState } from "react";
 
-import { TextColor } from "state";
-import { getSliderStyle } from "util/style";
 import styles from "style/colorSlider.module.css";
 
 const R = "r";
@@ -12,7 +11,8 @@ const ColorSlider = ({ stateContainer }) => {
   const [currentColor, setCurrentColor] = useState(R);
   const currentValue = stateContainer.color[currentColor];
 
-  const textColor = TextColor.useContainer();
+  const { formattedColor: textColor } = TextColor.useContainer();
+  const { formattedColor: backgroundColor } = BackgroundColor.useContainer();
 
   const handleChange = ({ target: { value: newValue } }) => {
     stateContainer.setColor({
@@ -22,12 +22,7 @@ const ColorSlider = ({ stateContainer }) => {
   };
 
   return (
-    <div>
-      <style
-        dangerouslySetInnerHTML={{
-          __html: getSliderStyle(styles.input, textColor.formattedColor),
-        }}
-      />
+    <div className={styles.colorSliderContainer}>
       <input
         type="range"
         className={styles.input}
@@ -36,9 +31,21 @@ const ColorSlider = ({ stateContainer }) => {
         value={currentValue}
         onChange={handleChange}
       />
-      <button onClick={() => setCurrentColor(R)}>R</button>
-      <button onClick={() => setCurrentColor(G)}>G</button>
-      <button onClick={() => setCurrentColor(B)}>B</button>
+      {[R, G, B].map((color, index) => (
+        <button
+          onClick={() => setCurrentColor(color)}
+          className={styles.button}
+          style={{
+            backgroundColor:
+              color === currentColor ? textColor : backgroundColor,
+            borderColor: textColor,
+            color: color === currentColor ? backgroundColor : textColor,
+            left: index * -2,
+          }}
+        >
+          {color}
+        </button>
+      ))}
     </div>
   );
 };

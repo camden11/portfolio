@@ -24,10 +24,16 @@ const NavMenu = ({ open }) => {
         />
       ))}
       <div className={classNames([styles.column, styles.colorColumn])}>
-        <h3 className="unstyled">{content.colorsHeader}</h3>
-        <h4 className="unstyled">{content.textColor}</h4>
+        <h3 className={classNames(["unstyled", styles.colorsHeaderText])}>
+          {content.colorsHeader}
+        </h3>
+        <h4 className={classNames(["unstyled", styles.colorSliderText])}>
+          {content.textColor}
+        </h4>
         <ColorSlider stateContainer={textColor} />
-        <h4 className="unstyled">{content.backgroundColor}</h4>
+        <h4 className={classNames(["unstyled", styles.colorSliderText])}>
+          {content.backgroundColor}
+        </h4>
         <ColorSlider stateContainer={backgroundColor} />
       </div>
     </div>

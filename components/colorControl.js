@@ -1,6 +1,7 @@
 import { BackgroundColor, PageTitle, TextColor } from "state";
 import React, { useEffect, useState } from "react";
 
+import { getSliderStyle } from "util/style";
 import styles from "style/colorControl.module.css";
 
 const TRANSITION_TIME = 400;
@@ -35,6 +36,11 @@ const ColorControl = ({ children }) => {
           : "none",
       }}
     >
+      <style
+        dangerouslySetInnerHTML={{
+          __html: getSliderStyle(textColor.formattedColor),
+        }}
+      />
       {children}
     </div>
   );

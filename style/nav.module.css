@@ -24,6 +24,7 @@
 }
 
 .navButtonIcon {
+  transform-origin: center;
   transition: transform 0.2s ease-in-out;
 }
 
