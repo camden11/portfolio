@@ -1,3 +1,16 @@
 .imageColumn {
   padding-top: 100px;
 }
+
+@media (max-width: 768px) {
+  .contentColumn {
+    order: 2;
+  }
+  .aboutHeader {
+    margin-top: 40px;
+  }
+  .imageColumn {
+    order: 1;
+    padding-top: 60px;
+  }
+}

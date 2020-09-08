@@ -107,6 +107,13 @@ a.unstyled {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  h3 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+}
+
 /* Layout */
 .container {
   margin: 0 auto;
@@ -137,6 +144,10 @@ a.unstyled {
   grid-column: span 7;
 }
 
+.headline-section {
+  margin-bottom: 40px;
+}
+
 @media (max-width: 768px) {
   .grid {
     column-gap: 0;
@@ -153,10 +164,6 @@ a.unstyled {
   .column-7 {
     grid-column: span 12;
   }
-}
-
-.headline-section {
-  margin-bottom: 40px;
 }
 
 /* Icons */
