@@ -33,6 +33,7 @@ const ColorSlider = ({ stateContainer }) => {
       />
       {[R, G, B].map((color, index) => (
         <button
+          key={index}
           onClick={() => setCurrentColor(color)}
           className={styles.button}
           style={{

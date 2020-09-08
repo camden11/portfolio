@@ -16,8 +16,9 @@ const NavMenu = ({ open }) => {
         open ? styles.navMenuOpen : styles.navMenuClosed,
       ])}
     >
-      {content.sections.map((section) => (
+      {content.sections.map((section, index) => (
         <NavMenuSection
+          key={index}
           section={section}
           smallStyle={classNames([styles.column, styles.columnSmall])}
           largeStyle={classNames([styles.column, styles.columnLarge])}

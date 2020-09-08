@@ -18,8 +18,8 @@ const NavMenuSection = ({
       </Link>
       {subSections && subSections.length > 0 && (
         <ul className={styles.subSections}>
-          {subSections.map((subSection) => (
-            <li className={styles.subSectionItem}>
+          {subSections.map((subSection, index) => (
+            <li className={styles.subSectionItem} key={index}>
               <Link href={subSection.path}>
                 <a>{subSection.name}</a>
               </Link>

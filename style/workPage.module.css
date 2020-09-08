@@ -1,0 +1,60 @@
+.gap {
+  grid-column: span 3;
+}
+
+.metaColumn {
+  padding-top: 100px;
+  grid-column: span 2;
+}
+
+.metaSection {
+  padding-top: 22px;
+}
+
+.metaItem {
+  margin-bottom: 16px;
+}
+
+.metaText {
+  font-family: acumin-pro, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.metaLink {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .gap {
+    grid-column: span 2;
+  }
+
+  .metaColumn {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .gap {
+    grid-column: span 0;
+  }
+
+  .metaColumn {
+    padding-top: 0;
+    grid-column: span 12;
+  }
+
+  h3.firstMetaHeader {
+    border-top: 2px solid;
+    margin-top: 100px;
+    padding-top: 16px;
+    width: 300px;
+  }
+
+  .workIcon {
+    display: none;
+  }
+}

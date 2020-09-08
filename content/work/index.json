@@ -1,5 +1,8 @@
 {
   "headline": "I've worked at a lot of jobs. Some have laid me off, most have not. It'd be really great if you could hire me and never lay me off. Words words words.",
   "workHeader": "All work",
-  "contentHeader": "My Work"
+  "contentHeader": "My Work",
+  "timeHeader": "Time",
+  "techHeader": "Tech",
+  "linksHeader": "Links"
 }

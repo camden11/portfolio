@@ -12,6 +12,5 @@ export const getTitleFromPath = (path, id = "") => {
     .map((pathSection) =>
       pathSection.replace("-", " ").replace("[id]", formattedId)
     );
-  console.log(path, formatted);
   return [ROOT_PATH, ...formatted];
 };
