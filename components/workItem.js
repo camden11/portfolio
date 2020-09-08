@@ -5,29 +5,14 @@ import Link from "next/link";
 import { WorkIcon } from "components";
 import { formatColor } from "util/color";
 import styles from "style/workItem.module.css";
+import { useHoverTransition } from "hooks";
 
 const TRANSITION_TIME = 300;
 
 const WorkItem = ({ item }) => {
-  const [hover, setHover] = useState(false);
-  const [transition, setTransition] = useState(false);
-  const [timeoutRef, setTimeoutRef] = useState(null);
-
-  const onHover = () => {
-    setHover(true);
-    setTransition(true);
-  };
-
-  const onLeave = () => {
-    setHover(false);
-    if (timeoutRef) {
-      clearTimeout(timeoutRef);
-    }
-    const nextTimeoutRef = setTimeout(() => {
-      setTransition(false);
-    }, TRANSITION_TIME);
-    setTimeoutRef(nextTimeoutRef);
-  };
+  const { hover, onHover, onLeave, transition } = useHoverTransition(
+    TRANSITION_TIME
+  );
 
   const textColor = TextColor.useContainer();
   const backgroundColor = BackgroundColor.useContainer();

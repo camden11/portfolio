@@ -148,10 +148,6 @@ a.unstyled {
   margin-bottom: 40px;
 }
 
-button {
-  transition: color 0.2s, background-color 0.2s;
-}
-
 @media (max-width: 768px) {
   .grid {
     column-gap: 0;

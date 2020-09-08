@@ -69,7 +69,6 @@ const ColorControl = ({ children }) => {
 
           div.with-color.with-hover:hover {
             background-color: ${backgroundColor};
-            transition: background-color 0.4s;
           }
 
           button.with-color {
