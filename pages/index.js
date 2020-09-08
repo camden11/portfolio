@@ -2,7 +2,7 @@ import { Contact, WorkItemList } from "components";
 import { getFile, getFiles } from "util/fs";
 
 import Link from "next/link";
-import styles from "style/Home.module.css";
+import styles from "style/home.module.css";
 import { useColor } from "hooks";
 
 const TEXT_COLOR = { r: 0, g: 0, b: 0 };
