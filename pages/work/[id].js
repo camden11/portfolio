@@ -8,6 +8,7 @@ import { useColor } from "hooks";
 
 const WorkItemPage = ({ content, pageContent }) => {
   useColor(content.textColor, content.backgroundColor, [content.id]);
+  const hasImages = content.images && content.images.length > 0;
 
   return (
     <div>
@@ -57,6 +58,11 @@ const WorkItemPage = ({ content, pageContent }) => {
           </div>
         </div>
       </div>
+      {hasImages && (
+        <div>
+          <h3>{pageContent.imagesHeader}</h3>
+        </div>
+      )}
     </div>
   );
 };
