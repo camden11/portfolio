@@ -2,6 +2,7 @@ import { equals, last } from "util/array";
 import { useEffect, useState } from "react";
 
 import { PageTitle as TitleTarget } from "state";
+import { getWindowWidth } from "util/path";
 
 const TYPE_INTERVAL = 50;
 
@@ -9,14 +10,32 @@ const useTyper = () => {
   const [current, setCurrent] = useState([""]);
   const [intervalRef, setIntervalRef] = useState(null);
 
+  const windowWidth = getWindowWidth();
+  const [lastWindowSize, setLastWindowSize] = useState(windowWidth);
+
   const { pageTitle: target, setIsDone } = TitleTarget.useContainer();
 
-  const shouldBackspace = () => {
-    if (current.length > target.length) return true;
+  // Less complex
+  const shouldBackspaceBase = () => {
     return (
       last(current) !==
       target[current.length - 1].substring(0, last(current).length)
     );
+  };
+
+  // More complex, needed if "Camden Phalen" switches to "CP"
+  const shouldBackspaceOnWindowSizeChange = () => {
+    const joinedCurrent = current.join();
+    const joinedTarget = target.join();
+    return joinedCurrent !== joinedTarget.substring(0, joinedCurrent.length);
+  };
+
+  const shouldBackspace = () => {
+    if (current.length > target.length) return true;
+    if (windowWidth !== lastWindowSize) {
+      return shouldBackspaceOnWindowSizeChange();
+    }
+    return shouldBackspaceBase();
   };
 
   const typeOnInterval = () => {
@@ -35,6 +54,7 @@ const useTyper = () => {
         type();
       } else {
         clearInterval(intervalRef);
+        setLastWindowSize(windowWidth);
         setIsDone(true);
       }
     }

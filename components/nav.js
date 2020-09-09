@@ -23,7 +23,7 @@ const Nav = () => {
     <div className={styles.nav}>
       <div className={styles.navBar}>
         <div className={styles.navTextContainer}>
-          <h2>
+          <h2 className={styles.navText}>
             {titleSectionNames.map((_, index) => (
               <span key={index}>
                 <NavTitleLink

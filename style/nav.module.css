@@ -11,6 +11,13 @@
   flex-grow: 1;
   padding-top: 6px;
   padding-bottom: 6px;
+  padding-right: 20px;
+}
+
+.navText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .navButton {
