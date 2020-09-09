@@ -17,7 +17,7 @@ const Contact = ({ content }) => {
       </div>
       <div className="column-6">
         <h3>{content.resumeHeader}</h3>
-        <a href="/camden_phalen_resume_2018.pdf" target="_blank">
+        <a href={content.resumeLink} target="_blank">
           {content.resumeText}
         </a>
       </div>
