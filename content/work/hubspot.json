@@ -23,9 +23,21 @@
     }
   ],
   "images": [
-    "/img/work/hubspot/dashboard.jpg",
-    "/img/work/hubspot/analyze.jpg",
-    "/img/work/hubspot/templates.jpg",
-    "/img/work/hubspot/editor.jpg"
+    {
+      "src": "/img/work/hubspot/dashboard.jpg",
+      "thumb": "/img/work/hubspot/dashboard_thumb.jpg"
+    },
+    {
+      "src": "/img/work/hubspot/analyze.jpg",
+      "thumb": "/img/work/hubspot/analyze_thumb.jpg"
+    },
+    {
+      "src": "/img/work/hubspot/templates.jpg",
+      "thumb": "/img/work/hubspot/templates_thumb.jpg"
+    },
+    {
+      "src": "/img/work/hubspot/editor.jpg",
+      "thumb": "/img/work/hubspot/editor_thumb.jpg"
+    }
   ]
 }

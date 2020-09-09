@@ -26,5 +26,10 @@
       "url": "https://github.com/brain-arts-org"
     }
   ],
-  "images": ["/img/work/brain-arts/dap.jpg"]
+  "images": [
+    {
+      "src": "/img/work/brain-arts/dap.jpg",
+      "thumb": "/img/work/brain-arts/dap_thumb.jpg"
+    }
+  ]
 }

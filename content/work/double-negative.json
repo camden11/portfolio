@@ -37,8 +37,17 @@
     }
   ],
   "images": [
-    "/img/work/double-negative/home.jpg",
-    "/img/work/double-negative/post.jpg",
-    "/img/work/double-negative/shows.jpg"
+    {
+      "src": "/img/work/double-negative/home.jpg",
+      "thumb": "/img/work/double-negative/home_thumb.jpg"
+    },
+    {
+      "src": "/img/work/double-negative/post.jpg",
+      "thumb": "/img/work/double-negative/post_thumb.jpg"
+    },
+    {
+      "src": "/img/work/double-negative/shows.jpg",
+      "thumb": "/img/work/double-negative/shows_thumb.jpg"
+    }
   ]
 }

@@ -27,10 +27,25 @@
     }
   ],
   "images": [
-    "/img/work/mass-hike/home.jpg",
-    "/img/work/mass-hike/blog.jpg",
-    "/img/work/mass-hike/hike.jpg",
-    "/img/work/mass-hike/checkout.jpg",
-    "/img/work/mass-hike/admin.jpg"
+    {
+      "src": "/img/work/mass-hike/home.jpg",
+      "thumb": "/img/work/mass-hike/home_thumb.jpg"
+    },
+    {
+      "src": "/img/work/mass-hike/blog.jpg",
+      "thumb": "/img/work/mass-hike/blog_thumb.jpg"
+    },
+    {
+      "src": "/img/work/mass-hike/hike.jpg",
+      "thumb": "/img/work/mass-hike/hike_thumb.jpg"
+    },
+    {
+      "src": "/img/work/mass-hike/checkout.jpg",
+      "thumb": "/img/work/mass-hike/checkout_thumb.jpg"
+    },
+    {
+      "src": "/img/work/mass-hike/admin.jpg",
+      "thumb": "/img/work/mass-hike/admin_thumb.jpg"
+    }
   ]
 }

@@ -23,9 +23,21 @@
     }
   ],
   "images": [
-    "/img/work/quadio/home.jpg",
-    "/img/work/quadio/profile.jpg",
-    "/img/work/quadio/playlist.jpg",
-    "/img/work/quadio/notifications.jpg"
+    {
+      "src": "/img/work/quadio/home.jpg",
+      "thumb": "/img/work/quadio/home_thumb.jpg"
+    },
+    {
+      "src": "/img/work/quadio/profile.jpg",
+      "thumb": "/img/work/quadio/profile_thumb.jpg"
+    },
+    {
+      "src": "/img/work/quadio/playlist.jpg",
+      "thumb": "/img/work/quadio/playlist_thumb.jpg"
+    },
+    {
+      "src": "/img/work/quadio/notifications.jpg",
+      "thumb": "/img/work/quadio/notifications_thumb.jpg"
+    }
   ]
 }

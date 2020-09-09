@@ -31,9 +31,21 @@
     }
   ],
   "images": [
-    "/img/work/upstatement/titos_store.jpg",
-    "/img/work/upstatement/students_school_list.jpg",
-    "/img/work/upstatement/students_school_detail.jpg",
-    "/img/work/upstatement/agents_school_list.jpg"
+    {
+      "src": "/img/work/upstatement/titos_store.jpg",
+      "thumb": "/img/work/upstatement/titos_store_thumb.jpg"
+    },
+    {
+      "src": "/img/work/upstatement/students_school_list.jpg",
+      "thumb": "/img/work/upstatement/students_school_list_thumb.jpg"
+    },
+    {
+      "src": "/img/work/upstatement/students_school_detail.jpg",
+      "thumb": "/img/work/upstatement/students_school_detail_thumb.jpg"
+    },
+    {
+      "src": "/img/work/upstatement/agents_school_list.jpg",
+      "thumb": "/img/work/upstatement/agents_school_list_thumb.jpg"
+    }
   ]
 }

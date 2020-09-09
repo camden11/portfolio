@@ -26,7 +26,7 @@ const Thumbnail = ({ item }) => {
     >
       <div
         className={styles.thumbnail}
-        style={{ backgroundImage: `url(${item.src})` }}
+        style={{ backgroundImage: `url(${item.thumbnail})` }}
       />
     </div>
   );
