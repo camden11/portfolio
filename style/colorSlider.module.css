@@ -34,6 +34,8 @@
 }
 
 .input[type="range"]::-moz-range-thumb {
+  border: none;
+  border-radius: 0;
   height: 16px;
   width: 16px;
   cursor: pointer;
@@ -63,6 +65,7 @@
   border: 2px solid;
   cursor: pointer;
   font-family: acumin-pro;
+  margin: 0;
   position: relative;
   text-transform: uppercase;
 }
