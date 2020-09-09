@@ -13,7 +13,9 @@
   },
   "id": "brain-arts",
   "headline": "Headless CMS builds, photography, and management for a volunteer-run, Boston-based nonprofit arts organization.",
-  "paragraphs": ["More information coming soon."],
+  "paragraphs": [
+    "I much of spent my last year in Boston volunteering with Brain Arts, an organization dedicated to supporting artists and musicians from marginalized communities, and nurturing the city’s arts scene as a whole. While working with Brain Arts, I developed two different CMS-based sites with React, Next.js, GraphQL and Takeshape CMS. I also served as the organization’s photography director, creating a system to organize the organization’s massive amount of photo content and managing a team of photographers to ensure that high quality photos were taken at all the org’s events."
+  ],
   "time": "2018-2020",
   "tech": ["React", "Next.js", "TakeShape"],
   "links": [
@@ -24,6 +26,10 @@
     {
       "title": "Source",
       "url": "https://github.com/brain-arts-org"
+    },
+    {
+      "title": "Flickr",
+      "url": "https://www.flickr.com/photos/brainartsorg/albums"
     }
   ],
   "images": [

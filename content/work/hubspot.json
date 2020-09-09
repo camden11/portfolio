@@ -13,7 +13,10 @@
   },
   "id": "hubspot",
   "headline": "Front end development on a powerful content management system used by thousands every day.",
-  "paragraphs": ["More information coming soon."],
+  "paragraphs": [
+    "I worked as a front-end software engineer on HubSpot's CMS team both as a co-op and in a full-time capacity. While at HubSpot, a made a variety of improvements to their Pages CMS dashboard, rebuilt their template picking too from the ground up, and wrote an extensive automated test suite for their drag-and-drop CMS editor.",
+    "More information coming soon."
+  ],
   "time": "2017-2018",
   "tech": ["React", "Redux", "Selenium"],
   "links": [
@@ -42,6 +45,6 @@
   ],
   "head": {
     "title": "HubSpot - Camden Phalen",
-    "description": "Front send development on a powerful content management system used by thousands every day."
+    "description": "Front end development on a powerful content management system used by thousands every day."
   }
 }
