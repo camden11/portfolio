@@ -12,7 +12,7 @@
     "b": 248
   },
   "id": "mass-hike",
-  "headline": "A full e-commerce platform and marketing site build from the ground up for a nonprofit seeking to make nature more accessible.",
+  "headline": "A full e-commerce platform and marketing site built from the ground up for a nonprofit seeking to make nature more accessible.",
   "paragraphs": ["More information coming soon."],
   "time": "2018",
   "tech": ["React", "Redux", "Node/Express"],
@@ -26,5 +26,11 @@
       "url": "https://github.com/masshikedev"
     }
   ],
-  "images": []
+  "images": [
+    "/img/work/mass-hike/home.jpg",
+    "/img/work/mass-hike/blog.jpg",
+    "/img/work/mass-hike/hike.jpg",
+    "/img/work/mass-hike/checkout.jpg",
+    "/img/work/mass-hike/admin.jpg"
+  ]
 }

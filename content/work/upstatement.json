@@ -30,5 +30,10 @@
       "url": "https://shorelight.com/"
     }
   ],
-  "images": []
+  "images": [
+    "/img/work/upstatement/titos_store.jpg",
+    "/img/work/upstatement/students_school_list.jpg",
+    "/img/work/upstatement/students_school_detail.jpg",
+    "/img/work/upstatement/agents_school_list.jpg"
+  ]
 }

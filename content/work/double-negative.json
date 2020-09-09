@@ -36,5 +36,9 @@
       "url": "https://github.com/camden11/double-negative-ui"
     }
   ],
-  "images": []
+  "images": [
+    "/img/work/double-negative/home.jpg",
+    "/img/work/double-negative/post.jpg",
+    "/img/work/double-negative/shows.jpg"
+  ]
 }

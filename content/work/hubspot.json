@@ -22,5 +22,10 @@
       "url": "https://www.hubspot.com/"
     }
   ],
-  "images": []
+  "images": [
+    "/img/work/hubspot/dashboard.jpg",
+    "/img/work/hubspot/analyze.jpg",
+    "/img/work/hubspot/templates.jpg",
+    "/img/work/hubspot/editor.jpg"
+  ]
 }

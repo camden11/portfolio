@@ -22,10 +22,5 @@
       "url": "https://www.alignable.com/"
     }
   ],
-  "images": [
-    "/img/work/quadio/home.jpg",
-    "/img/work/quadio/profile.jpg",
-    "/img/work/quadio/playlist.jpg",
-    "/img/work/quadio/notifications.jpg"
-  ]
+  "images": []
 }
