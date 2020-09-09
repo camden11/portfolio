@@ -12,21 +12,18 @@
     "b": 248
   },
   "id": "mass-hike",
-  "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis ullamcorper tortor. Phasellus interdum id nunc et pulvinar. Testing testing testing",
-  "paragraphs": [
-    "The diamond that was stolen held the code that melted water into letters spelling where it had been taken to. In fact, I had a vision of the numbers corresponding with the letters - “THE DIAMOND”. They're suspended like a prism splitting floodlight to poles of primary colors clawing the veil of the vacuum. There's a picture of this given to authorities, the sentence \"I'm an architect and here's my prison\" written on it.",
-    "With schematics so meticulous, the measurements of superimpositions of a room within the window make a dream that ends up being such an entity. In your reflection, you are the dream to it. You are the prism.The mirrors in the corner throwing images against the other mirrors made counting corners impossible. The breaking news had counted one, two, three, four, five six, seven, eight, nine, ten, eleven corners of the mirrored corners!"
-  ],
-  "time": "2020",
-  "tech": ["React Native", "Redux", "Swift"],
+  "headline": "A full e-commerce platform and marketing site build from the ground up for a nonprofit seeking to make nature more accessible.",
+  "paragraphs": ["More information coming soon."],
+  "time": "2018",
+  "tech": ["React", "Redux", "Node/Express"],
   "links": [
     {
-      "title": "Quadio.com",
+      "title": "MassHike.org",
       "url": "https://www.quadio.com/"
     },
     {
-      "title": "Testing",
-      "url": "https://www.quadio.com/"
+      "title": "Source",
+      "url": "https://github.com/masshikedev"
     }
   ],
   "images": []
