@@ -112,9 +112,32 @@ button {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-top: 6px;
+  }
+
   h3 {
     margin-top: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .align-right {
+    text-align: left;
   }
 }
 
@@ -167,6 +190,10 @@ button {
 
   .column-7 {
     grid-column: span 12;
+  }
+
+  .headline-section {
+    margin-bottom: 0;
   }
 }
 

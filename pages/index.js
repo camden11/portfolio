@@ -2,6 +2,7 @@ import { Contact, WorkItemList } from "components";
 import { getFile, getFiles } from "util/fs";
 
 import Link from "next/link";
+import { classNames } from "util/style";
 import styles from "style/home.module.css";
 import { useColor } from "hooks";
 
@@ -23,7 +24,7 @@ const HomePage = ({ content, contact, work }) => {
       <div className={styles.workSection}>
         <h3>{content.workHeader}</h3>
         <WorkItemList work={work} />
-        <div className="align-right">
+        <div className={classNames(["align-right", styles.workLink])}>
           <Link href="/work">
             <a>{content.workMoreButton}</a>
           </Link>

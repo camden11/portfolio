@@ -3,4 +3,12 @@
   padding: 5px;
   transition: inherit;
   width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
 }
