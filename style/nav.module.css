@@ -18,14 +18,20 @@
   cursor: pointer;
   height: 40px;
   font-size: 22px;
+  padding-left: 6px;
+  padding-right: 6px;
   position: relative;
   top: 3px;
   width: 40px;
 }
 
 .navButtonIcon {
-  transform-origin: center;
+  height: 36px;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  transform-origin: 14px 18px;
   transition: transform 0.2s ease-in-out;
+  width: 28px;
 }
 
 .navButtonIconClosed {

@@ -99,6 +99,10 @@ a.unstyled {
   text-transform: inherit;
 }
 
+button {
+  font-family: acumin-pro;
+}
+
 .align-right {
   text-align: right;
 }
