@@ -47,5 +47,9 @@
       "src": "/img/work/upstatement/agents_school_list.jpg",
       "thumb": "/img/work/upstatement/agents_school_list_thumb.jpg"
     }
-  ]
+  ],
+  "head": {
+    "title": "Upstatement - Camden Phalen",
+    "description": "Design-driven strategy and web development for a host of different high-profile companies."
+  }
 }

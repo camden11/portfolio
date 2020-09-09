@@ -5,5 +5,9 @@
   "timeHeader": "Time",
   "techHeader": "Tech",
   "linksHeader": "Links",
-  "imagesHeader": "Images"
+  "imagesHeader": "Images",
+  "head": {
+    "title": "Work - Camden Phalen",
+    "description": "Front end, mobile, and full sack development, as well as UX design"
+  }
 }

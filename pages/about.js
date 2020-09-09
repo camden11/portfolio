@@ -1,4 +1,4 @@
-import { Contact, Image } from "components";
+import { Contact, Head, Image } from "components";
 
 import React from "react";
 import { classNames } from "util/style";
@@ -13,6 +13,7 @@ const AboutPage = ({ content, contact }) => {
   useColor(TEXT_COLOR, BACKGROUND_COLOR);
   return (
     <div>
+      <Head head={content.head} />
       <div className="headline-section">
         <h1>{content.headline}</h1>
       </div>

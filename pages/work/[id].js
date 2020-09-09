@@ -1,4 +1,4 @@
-import { Gallery, WorkIcon } from "components";
+import { Gallery, Head, WorkIcon } from "components";
 import { getFile, getFiles } from "util/fs";
 
 import React from "react";
@@ -12,6 +12,7 @@ const WorkItemPage = ({ content, pageContent }) => {
 
   return (
     <div>
+      <Head head={content.head} />
       <div className="headline-section">
         <h1>{content.headline}</h1>
       </div>

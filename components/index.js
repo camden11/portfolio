@@ -4,6 +4,7 @@ export { default as ColorSlider } from "./colorSlider";
 export { default as Contact } from "./contact";
 export { default as Footer } from "./footer";
 export { default as Gallery } from "./gallery";
+export { default as Head } from "./head";
 export { default as Image } from "./image";
 export { default as Nav } from "./nav";
 export { default as NavMenu } from "./navMenu";

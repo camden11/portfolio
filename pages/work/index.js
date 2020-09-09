@@ -1,7 +1,7 @@
+import { Head, WorkItemList } from "components";
 import { getFile, getFiles } from "util/fs";
 
 import React from "react";
-import { WorkItemList } from "components";
 import { useColor } from "hooks";
 
 const TEXT_COLOR = { r: 246, g: 243, b: 239 };
@@ -11,6 +11,7 @@ const WorkIndexPage = ({ content, work }) => {
   useColor(TEXT_COLOR, BACKGROUND_COLOR);
   return (
     <div>
+      <Head head={content.head} />
       <div className="headline-section">
         <h1>{content.headline}</h1>
       </div>

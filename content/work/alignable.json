@@ -22,5 +22,9 @@
       "url": "https://www.alignable.com/"
     }
   ],
-  "images": []
+  "images": [],
+  "head": {
+    "title": "Alignable - Camden Phalen",
+    "description": "Full stack development for a startup seeking to change the way small businesses network and collaborate."
+  }
 }

@@ -1,4 +1,4 @@
-import { Contact, WorkItemList } from "components";
+import { Contact, Head, WorkItemList } from "components";
 import { getFile, getFiles } from "util/fs";
 
 import Link from "next/link";
@@ -13,6 +13,7 @@ const HomePage = ({ content, contact, work }) => {
   useColor(TEXT_COLOR, BACKGROUND_COLOR);
   return (
     <div>
+      <Head head={content.head} />
       <div className="headline-section">
         <h1>{content.headline}</h1>
         <div className="align-right">

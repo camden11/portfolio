@@ -49,5 +49,9 @@
       "src": "/img/work/double-negative/shows.jpg",
       "thumb": "/img/work/double-negative/shows_thumb.jpg"
     }
-  ]
+  ],
+  "head": {
+    "title": "Double Negative - Camden Phalen",
+    "description": "An music blog built to showcase unique independant artists, with photography and writing from a variety of contributors."
+  }
 }

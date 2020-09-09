@@ -47,5 +47,9 @@
       "src": "/img/work/mass-hike/admin.jpg",
       "thumb": "/img/work/mass-hike/admin_thumb.jpg"
     }
-  ]
+  ],
+  "head": {
+    "title": "Mass Hike - Camden Phalen",
+    "description": "A full e-commerce platform and marketing site built from the ground up for a nonprofit seeking to make nature more accessible."
+  }
 }

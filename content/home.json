@@ -2,5 +2,9 @@
   "headline": "I'm a creative software engineer with an eye for design and a penchant for attention to detail. I combine clean code with design thinking to build distinctive user experiences.",
   "aboutMoreButton": "More about me",
   "workHeader": "Recent Work",
-  "workMoreButton": "View more work"
+  "workMoreButton": "View more work",
+  "head": {
+    "title": "Camden Phalen",
+    "description": "Creative software engineer."
+  }
 }

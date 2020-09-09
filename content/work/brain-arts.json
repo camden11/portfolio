@@ -31,5 +31,9 @@
       "src": "/img/work/brain-arts/dap.jpg",
       "thumb": "/img/work/brain-arts/dap_thumb.jpg"
     }
-  ]
+  ],
+  "head": {
+    "title": "Brain Arts - Camden Phalen",
+    "description": "Headless CMS builds, photography, and management for a volunteer-run, Boston-based nonprofit arts organization."
+  }
 }

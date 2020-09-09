@@ -3,5 +3,9 @@
   "aboutHeader": "About me",
   "paragraphs": ["More information coming soon."],
   "image": "/img/camden.jpg",
-  "imageAlt": "Camden Phalen"
+  "imageAlt": "Camden Phalen",
+  "head": {
+    "title": "About - Camden Phalen",
+    "description": "Creative software engineer."
+  }
 }

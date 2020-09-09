@@ -39,5 +39,9 @@
       "src": "/img/work/hubspot/editor.jpg",
       "thumb": "/img/work/hubspot/editor_thumb.jpg"
     }
-  ]
+  ],
+  "head": {
+    "title": "HubSpot - Camden Phalen",
+    "description": "Front send development on a powerful content management system used by thousands every day."
+  }
 }

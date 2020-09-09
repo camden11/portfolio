@@ -39,5 +39,9 @@
       "src": "/img/work/quadio/notifications.jpg",
       "thumb": "/img/work/quadio/notifications_thumb.jpg"
     }
-  ]
+  ],
+  "head": {
+    "title": "Quadio - Camden Phalen",
+    "description": "Mobile development at a startup building a streaming platform and social network for college musicians."
+  }
 }
