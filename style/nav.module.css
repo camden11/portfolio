@@ -9,6 +9,7 @@
 
 .navTextContainer {
   flex-grow: 1;
+  height: 42px;
   overflow: hidden;
   padding-top: 6px;
   padding-bottom: 6px;
