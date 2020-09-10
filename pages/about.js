@@ -24,7 +24,13 @@ const AboutPage = ({ content, contact }) => {
             <p>{paragraph}</p>
           ))}
         </div>
-        <div className={classNames(["column-5", styles.imageColumn])}>
+        <div
+          className={classNames([
+            "column-5",
+            "right-column",
+            styles.imageColumn,
+          ])}
+        >
           <Image src={content.image} alt={content.imageAlt} />
         </div>
       </div>

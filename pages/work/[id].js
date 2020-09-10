@@ -23,8 +23,14 @@ const WorkItemPage = ({ content, pageContent }) => {
             <p key={index}>{paragraph}</p>
           ))}
         </div>
-        <div className={styles.gap} />
-        <div className={styles.metaColumn}>
+        <div className={classNames(["column-3", styles.gap])} />
+        <div
+          className={classNames([
+            "column-2",
+            "right-column",
+            styles.metaColumn,
+          ])}
+        >
           <div className={styles.workIcon}>
             <WorkIcon workId={content.id} size={70} />
           </div>
