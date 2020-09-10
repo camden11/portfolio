@@ -14,7 +14,7 @@
   "id": "upstatement",
   "headline": "Design-driven strategy and web development for a host of different high-profile companies.",
   "paragraphs": [
-    "At Upstatement, I helped multiple high profile brands transform their digital presence. During my time there, I built a new Shopify store for Tito’s Vodka and developed two intricate and complex information hub sites for Shorelight, a company focused on promoting US universities to international students."
+    "At Upstatement, I helped multiple high profile brands transform their digital presence. During my time there, I worked to add live streaming to Chris Kimball's Milk Street's site,  built a new Shopify store for Tito’s Vodka and developed two intricate and complex information hub sites for Shorelight, a company focused on promoting US universities to international students."
   ],
   "time": "2018-2020",
   "tech": ["React", "Contentful", "PHP", "Craft CMS", "Shopify"],
@@ -22,6 +22,10 @@
     {
       "title": "Upstatement",
       "url": "https://www.upstatement.com/"
+    },
+    {
+      "title": "Milk Street",
+      "url": "https://www.177milkstreet.com/"
     },
     {
       "title": "Tito's Vodka",
