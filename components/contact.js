@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = ({ content }) => {
   return (
-    <div className="grid">
+    <div className="grid" id="contact">
       <div className="column-6">
         <h3>{content.contactHeader}</h3>
         <ul>
