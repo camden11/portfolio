@@ -262,3 +262,22 @@ svg {
 }
 
 /* TEMP: Work page styles get unmounted during page transition */
+.meta-text {
+  font-family: acumin-pro, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.meta-section {
+  padding-top: 22px;
+}
+
+.meta-item {
+  margin-bottom: 16px;
+}
+
+.meta-link {
+  display: block;
+}

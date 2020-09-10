@@ -34,30 +34,25 @@ const WorkItemPage = ({ content, pageContent }) => {
           <div className={styles.workIcon}>
             <WorkIcon workId={content.id} size={70} />
           </div>
-          <div className={styles.metaSection}>
-            <div className={styles.metaItem}>
+          <div className="meta-section">
+            <div className="meta-item">
               <h3 className={classNames(["unstyled", styles.firstMetaHeader])}>
                 {pageContent.timeHeader}
               </h3>
-              <p className={styles.metaText}>{content.time}</p>
+              <p className="meta-text">{content.time}</p>
             </div>
-            <div className={styles.metaItem}>
+            <div className="meta-item">
               <h3 className="unstyled">{pageContent.techHeader}</h3>
               {content.tech.map((item, index) => (
-                <p key={index} className={styles.metaText}>
+                <p key={index} className="meta-text">
                   {item}
                 </p>
               ))}
             </div>
-            <div className={styles.metaItem}>
+            <div className="meta-item">
               <h3 className="unstyled">{pageContent.linksHeader}</h3>
               {content.links.map(({ title, url }, index) => (
-                <a
-                  href={url}
-                  target="_blank"
-                  className={styles.metaLink}
-                  key={index}
-                >
+                <a href={url} target="_blank" className="meta-link" key={index}>
                   {title}
                 </a>
               ))}
