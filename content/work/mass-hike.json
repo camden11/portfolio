@@ -14,8 +14,7 @@
   "id": "mass-hike",
   "headline": "A full e-commerce platform and marketing site built from the ground up for a nonprofit seeking to make nature more accessible.",
   "paragraphs": [
-    "During my last semester at Northeastern, I worked full-time as a project lead for Scout, the university’s student-led design studio. As project lead, I managed a team of five designers and developers to carry out a variety of different design and development tasks for Mass Hike, a nonprofit organization based in Boston. Ultimately, we built the organization a full e-commerce platform, complete with and admin-side interface, as well as a CMS-based marketing website.",
-    "More information coming soon."
+    "During my last semester at Northeastern, I worked full-time as a project lead for Scout, the university’s student-led design studio. As project lead, I managed a team of five designers and developers to carry out a variety of different design and development tasks for Mass Hike, a nonprofit organization based in Boston. Ultimately, we built the organization a full e-commerce platform, complete with and admin-side interface, as well as a CMS-based marketing website."
   ],
   "time": "2018",
   "tech": ["React", "Redux", "Node/Express"],

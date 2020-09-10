@@ -24,8 +24,7 @@
   "id": "double-negative",
   "headline": "An music blog built to showcase unique independant artists, with photography and writing from a variety of contributors.",
   "paragraphs": [
-    "Double Negative is an independent, volunteer run music blog I built and helped found in 2019. Its mission is to create an open and inclusive platform for people who love music, and to cover and promote the best and most unique independent artists making it. I currently serve as an editor on the site and continue to maintain its codebase.",
-    "More information coming soon."
+    "Double Negative is an independent, volunteer run music blog I built and helped found in 2019. Its mission is to create an open and inclusive platform for people who love music, and to cover and promote the best and most unique independent artists making it. I currently serve as an editor on the site and continue to maintain its codebase."
   ],
   "time": "2019-2020",
   "tech": ["React", "Next.js", "Prismic CMS"],
