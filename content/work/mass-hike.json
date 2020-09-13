@@ -17,7 +17,7 @@
     "During my last semester at Northeastern, I worked full-time as a project lead for Scout, the university’s student-led design studio. As project lead, I managed a team of five designers and developers to carry out a variety of different design and development tasks for Mass Hike, a nonprofit organization based in Boston. Ultimately, we built the organization a full e-commerce platform, complete with and admin-side interface, as well as a CMS-based marketing website."
   ],
   "time": "2018",
-  "tech": ["React", "Redux", "Node/Express"],
+  "tech": ["React", "Redux", "Node/Express", "MongoDB"],
   "links": [
     {
       "title": "MassHike.org",
