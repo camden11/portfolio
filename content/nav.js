@@ -25,4 +25,6 @@ export default {
   colorsHeader: "Colors",
   textColor: "Text Color",
   backgroundColor: "Background Color",
+  footerSourceText: "View Source",
+  footerSourceUrl: "https://github.com/camden11/portfolio",
 };
