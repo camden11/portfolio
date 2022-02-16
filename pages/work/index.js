@@ -4,8 +4,8 @@ import { getFile, getFiles } from "util/fs";
 import React from "react";
 import { useColor } from "hooks";
 
-const TEXT_COLOR = { r: 246, g: 243, b: 239 };
-const BACKGROUND_COLOR = { r: 45, g: 87, b: 61 };
+const TEXT_COLOR = { r: 50, g: 44, b: 44 };
+const BACKGROUND_COLOR = { r: 255, g: 224, b: 69 };
 
 const WorkIndexPage = ({ content, work }) => {
   useColor(TEXT_COLOR, BACKGROUND_COLOR);

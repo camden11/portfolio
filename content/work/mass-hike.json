@@ -2,14 +2,14 @@
   "name": "Mass Hike",
   "priority": 5,
   "backgroundColor": {
-    "r": 224,
-    "g": 99,
-    "b": 58
+    "r": 223,
+    "g": 232,
+    "b": 219
   },
   "textColor": {
-    "r": 248,
-    "g": 248,
-    "b": 248
+    "r": 81,
+    "g": 107,
+    "b": 77
   },
   "id": "mass-hike",
   "headline": "A full e-commerce platform and marketing site built from the ground up for a nonprofit seeking to make nature more accessible.",
@@ -19,10 +19,6 @@
   "time": "2018",
   "tech": ["React", "Redux", "Node/Express", "MongoDB"],
   "links": [
-    {
-      "title": "MassHike.org",
-      "url": "https://www.quadio.com/"
-    },
     {
       "title": "Source",
       "url": "https://github.com/masshikedev"

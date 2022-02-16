@@ -1,0 +1,54 @@
+{
+  "name": "Care/of",
+  "priority": 1,
+  "backgroundColor": {
+    "r": 241,
+    "g": 87,
+    "b": 75
+  },
+  "textColor": {
+    "r": 255,
+    "g": 255,
+    "b": 255
+  },
+  "id": "care-of",
+  "headline": "A frontend overhaul built for speed at a user-focused wellness company.",
+  "paragraphs": [
+    "I currently work at Care/of, a wellness company based in New York City. My team and I are in the process of rebuilding the site's entire front end in Next.js. Over the course of the past year and a half, we've moved over 80% of the site's traffic to our new app, resulting in signifcantly faster load times and an elevated user experience.",
+    "Some of my work at Care/of includes rebuilding the product catalog and cart, implementing the front end of a new gift card system, and re-architecting and rebuilding the vitamin recommendation quiz."
+  ],
+  "time": "2020-Present",
+  "tech": ["React", "Next.js", "Rails"],
+  "links": [
+    {
+      "title": "takecareof.com",
+      "url": "https://takecareof.com/"
+    },
+    {
+      "title": "Care/of Quiz",
+      "url": "https://takecareof.com/survey/new"
+    }
+  ],
+  "images": [
+    {
+      "src": "/img/work/care-of/catalog.png",
+      "thumb": "/img/work/care-of/catalog_thumb.png"
+    },
+    {
+      "src": "/img/work/care-of/cart.png",
+      "thumb": "/img/work/care-of/cart_thumb.png"
+    },
+    {
+      "src": "/img/work/care-of/quiz.png",
+      "thumb": "/img/work/care-of/quiz_thumb.png"
+    },
+    {
+      "src": "/img/work/care-of/gift.png",
+      "thumb": "/img/work/care-of/gift_thumb.png"
+    }
+  ],
+  "head": {
+    "title": "Care/of - Camden Phalen",
+    "description": "A frontend overhaul built for speed at a user-focused wellness company."
+  }
+}

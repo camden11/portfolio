@@ -14,7 +14,7 @@
   "id": "quadio",
   "headline": "Mobile development at a startup building a streaming platform and social network for college musicians.",
   "paragraphs": [
-    "Most recently, I worked as a mobile engineer at Quadio, a startup building a new hybrid streaming platform and social media app for college students. I worked with a team of two other engineers on the company’s iOS app, which was built primarily in React Native, but also included a Swift and Objective-C powered music player."
+    "At Quadio, I worked with two other engineers to build a new hybrid streaming platform and social media app for college students. The app was built primarily in React Native, but also included a Swift and Objective-C powered music player."
   ],
   "time": "2020",
   "tech": ["React Native", "Redux", "Swift"],
@@ -22,10 +22,6 @@
     {
       "title": "Quadio.com",
       "url": "https://www.quadio.com/"
-    },
-    {
-      "title": "App Store",
-      "url": "https://apps.apple.com/us/app/quadio-social-music-streaming/id1493537485"
     }
   ],
   "images": [

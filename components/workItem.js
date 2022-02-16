@@ -1,5 +1,5 @@
 import { BackgroundColor, TextColor } from "state";
-import React, { useState } from "react";
+import React from "react";
 
 import Link from "next/link";
 import { WorkIcon } from "components";
